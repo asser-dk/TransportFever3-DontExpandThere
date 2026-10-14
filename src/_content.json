@@ -1,8 +1,12 @@
 {
     "archives": null,
     "files": [
+        "gui/fenris_dont_build_there/era_icons.res.lua",
+        "gui/fenris_dont_build_there/era_icons.script.tl",
         "infrastructure/edge_addons/fenris_dont_build_there/empty.mdl",
         "infrastructure/edge_addons/fenris_dont_build_there/icon@2x.tga",
+        "infrastructure/edge_addons/fenris_dont_build_there/icon_old@2x.tga",
+        "infrastructure/edge_addons/fenris_dont_build_there/icon_old_preview@2x.tga",
         "infrastructure/edge_addons/fenris_dont_build_there/icon_preview@2x.tga",
         "infrastructure/edge_addons/fenris_dont_build_there/street.edge.lua"
     ]
