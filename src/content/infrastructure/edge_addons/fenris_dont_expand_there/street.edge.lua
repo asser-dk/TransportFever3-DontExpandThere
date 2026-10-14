@@ -5,7 +5,7 @@ return {
         yearTo = 4000,
     },
     cost = {
-        price = 10,
+        price = 100,
         priceScale = 1,
     },
     maintenance = {
