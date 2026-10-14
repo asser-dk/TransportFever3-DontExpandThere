@@ -1,0 +1,6 @@
+{
+    "en": {
+        "FENRIS_DONT_BUILD_THERE_NAME": "Prevent Town Development Tool",
+        "FENRIS_DONT_BUILD_THERE_DESCRIPTION": "Allow or deny development along roads. Towns will not grow buildings on the marked side of a road. Existing town buildings are removed. Does not prevent towns from extending or changing the road."
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "archives": null,
+    "files": [
+        "infrastructure/edge_addons/fenris_dont_build_there/empty.mdl",
+        "infrastructure/edge_addons/fenris_dont_build_there/icon@2x.tga",
+        "infrastructure/edge_addons/fenris_dont_build_there/icon_preview@2x.tga",
+        "infrastructure/edge_addons/fenris_dont_build_there/street.edge.lua"
+    ]
+}

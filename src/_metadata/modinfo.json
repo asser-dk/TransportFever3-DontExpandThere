@@ -1,0 +1,15 @@
+{
+    "authors": [
+        {
+            "name": "fenris",
+            "role": "CREATOR"
+        }
+    ],
+    "description": "Invisible road add-on. Town buildings won't spawn on that side.",
+    "name": "Don't build there",
+    "summary": "Keep town buildings away from roads.",
+    "tags": [
+        "Road"
+    ],
+    "url": ""
+}
