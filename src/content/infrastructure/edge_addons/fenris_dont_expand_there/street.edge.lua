@@ -14,8 +14,8 @@ return {
     desc = {
         icon = "icon.tga",
         previewIcon = "icon_preview.tga",
-        name = _("FENRIS_DONT_BUILD_THERE_NAME"),
-        description = _("FENRIS_DONT_BUILD_THERE_DESCRIPTION"),
+        name = _("FENRIS_DONT_EXPAND_THERE_NAME"),
+        description = _("FENRIS_DONT_EXPAND_THERE_DESCRIPTION"),
     },
     categoryList = {
         categories = {

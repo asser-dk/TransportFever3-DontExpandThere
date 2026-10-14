@@ -5,9 +5,9 @@
             "role": "CREATOR"
         }
     ],
-    "description": "Invisible road add-on. Town buildings won't spawn on that side.\n\nCover map © OpenStreetMap contributors, openstreetmap.org/copyright",
-    "name": "Don't build there",
-    "summary": "Keep town buildings away from roads.",
+    "description": "Tired of towns expanding along your highways, or right up to the roads beside your train tracks? Want to stop a town growing towards the nearby farm or forest? Or just control which roads buildings can face?\n\nThen this is the mod for you!\n\nBehind the scenes it's the noise barrier without the… barrier… and the noise reduction. It does stop towns from spawning buildings along the marked side of the road. Towns can still upgrade or extend the road unless you also lock it with the default Locking Tool.\n\nIt costs the same to build as a noise barrier, including demolition of any affected buildings (in my head, the \"construction price\" is the cost of the associated bureaucracy).\n\nCover map © OpenStreetMap contributors, openstreetmap.org/copyright",
+    "name": "Don't expand there",
+    "summary": "Keep town buildings away from specific roads.",
     "tags": [
         "Road"
     ],

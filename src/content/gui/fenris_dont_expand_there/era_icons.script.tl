@@ -1,6 +1,6 @@
 local construction_react_util = ug_require "::/gui/construction/construction_react_util.tl" as ConstructionReactUtil
 
-local ADD_ON = "edge_addons/fenris_dont_build_there/street.edge"
+local ADD_ON = "edge_addons/fenris_dont_expand_there/street.edge"
 local ERA_YEAR = 1940
 
 local era_icons = {}
@@ -37,7 +37,7 @@ end
 function era_icons.doReplace(_ : ReactReplacementApi)
 	local original = construction_react_util.forEachDefinition
 	if type(original) ~= "function" then
-		log.warning("fenris_dont_build_there: construction_react_util.forEachDefinition not found, era icons disabled")
+		log.warning("fenris_dont_expand_there: construction_react_util.forEachDefinition not found, era icons disabled")
 		return
 	end
 	construction_react_util.forEachDefinition = function(fn : function(ConstructionDefinition), repository : ConstructionActionRepository)
@@ -45,7 +45,7 @@ function era_icons.doReplace(_ : ReactReplacementApi)
 			fn(withEraIcons(definition))
 		end, repository)
 	end
-	log.message("fenris_dont_build_there: era icons enabled")
+	log.message("fenris_dont_expand_there: era icons enabled")
 end
 
 return era_icons
