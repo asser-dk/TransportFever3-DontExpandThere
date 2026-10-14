@@ -5,7 +5,7 @@
             "role": "CREATOR"
         }
     ],
-    "description": "Invisible road add-on. Town buildings won't spawn on that side.",
+    "description": "Invisible road add-on. Town buildings won't spawn on that side.\n\nCover map © OpenStreetMap contributors, openstreetmap.org/copyright",
     "name": "Don't build there",
     "summary": "Keep town buildings away from roads.",
     "tags": [

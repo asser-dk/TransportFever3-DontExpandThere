@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E3944" />
+      <stop offset="1" stop-color="#232B33" />
+    </linearGradient>
+    <radialGradient id="glow" cx="960" cy="520" r="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A6684" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="vignette" cx="960" cy="540" r="1100" gradientUnits="userSpaceOnUse">
+      <stop offset="0.5" stop-color="#345373" stop-opacity="0" />
+      <stop offset="1" stop-color="#11161B" stop-opacity="0.45" />
+    </radialGradient>
+    <filter id="shadow" x="-0.2" y="-0.2" width="1.4" height="1.5">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="22" />
+      <feOffset dy="18" result="blur" />
+      <feFlood flood-color="#1C2733" flood-opacity="0.16" />
+      <feComposite in2="blur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="window-clip">
+      <rect x="0" y="15" width="960" height="625" rx="40" />
+    </clipPath>
+    <clipPath id="slash-clip">
+      <circle r="91.5" />
+    </clipPath>
+    <path id="cursor-shape" d="M 0 0 L 0 76 L 19 58 L 32 88 L 46 82 L 33 53 L 58 53 Z" stroke-width="6" stroke-linejoin="round" />
+    <g id="pin-shape">
+      <rect x="-58" y="-167" width="116" height="26" rx="13" />
+      <path d="M -30 -141 L 30 -141 L 26 -50 Q 80 -30 80 0 L -80 0 Q -80 -30 -26 -50 Z" />
+      <path d="M -8 0 L 8 0 L 1 136 L -1 136 Z" />
+    </g>
+    <clipPath id="sign-clip">
+      <circle r="166" />
+    </clipPath>
+    <mask id="counterweight-mask" maskUnits="userSpaceOnUse" x="724.9" y="118.5" width="90" height="70">
+      <rect x="724.9" y="118.5" width="90" height="70" fill="#FFFFFF" />
+      <line x1="758.2" y1="137.5" x2="758.2" y2="169.5" stroke="#000000" stroke-width="4" stroke-linecap="round" />
+      <line x1="781.6" y1="137.5" x2="781.6" y2="169.5" stroke="#000000" stroke-width="4" stroke-linecap="round" />
+    </mask>
+    <mask id="cab-mask" maskUnits="userSpaceOnUse" x="938.9" y="118.5" width="76" height="62">
+      <rect x="938.9" y="118.5" width="76" height="62" fill="#FFFFFF" />
+      <path d="M 972.9 137.5 L 989.9 137.5 L 985.9 149.5 L 972.9 149.5 Z" fill="#000000" />
+    </mask>
+  </defs>
+  <g id="backdrop">
+    <rect id="background" width="1920" height="1080" fill="url(#bg)" />
+    <image id="map" href="map.svg" width="1920" height="1080" />
+    <rect id="vignette-edges" width="1920" height="1080" fill="url(#vignette)" />
+    <rect id="glow-centre" width="1920" height="1080" fill="url(#glow)" />
+  </g>
+  <g id="icon" transform="translate(175.7 107.9) scale(0.849)">
+    <path id="site-ground" d="M 761.0 272.5 L 1540.5 722.5 L 1332.6 842.5 L 553.2 392.5 Z" fill="#FFFFFF" fill-opacity="0.21" />
+    <g id="fence-back">
+    <path id="fence-far" d="M 761.0 272.5 L 1540.5 722.5 L 1540.5 687.5 L 761.0 237.5 Z" fill="#C9D0D7" stroke="#C9D0D7" stroke-width="1" stroke-linejoin="round" />
+    <path id="fence-left" d="M 761.0 272.5 L 553.2 392.5 L 553.2 357.5 L 761.0 237.5 Z" fill="#AEB6BF" stroke="#AEB6BF" stroke-width="1" stroke-linejoin="round" />
+    </g>
+    <g id="crane" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+      <g id="crane-base" stroke="none">
+        <path d="M 847.6 482.5 L 916.9 522.5 L 916.9 511.5 L 847.6 471.5 Z" fill="#C9D0D7" />
+        <path d="M 986.2 482.5 L 916.9 522.5 L 916.9 511.5 L 986.2 471.5 Z" fill="#AEB6BF" />
+        <path d="M 916.9 431.5 L 986.2 471.5 L 916.9 511.5 L 847.6 471.5 Z" fill="#FFFFFF" />
+      </g>
+      <path id="mast-poles" d="M 890.9 459.5 L 890.9 102.5 M 916.9 471.5 L 916.9 102.5 M 942.9 459.5 L 942.9 102.5" stroke-width="8" />
+      <path id="mast-bracing" d="M 890.9 459.5 L 916.9 431.5 L 890.9 379.5 L 916.9 351.5 L 890.9 299.5 L 916.9 271.5 L 890.9 219.5 L 916.9 191.5 L 890.9 139.5 M 916.9 471.5 L 942.9 419.5 L 916.9 391.5 L 942.9 339.5 L 916.9 311.5 L 942.9 259.5 L 916.9 231.5 L 942.9 179.5 L 916.9 151.5" stroke-width="3.5" />
+      <path id="jib-chords" d="M 726.9 102.5 L 1386.9 102.5 M 726.9 128.5 L 1386.9 128.5 M 1386.9 102.5 L 1386.9 128.5 M 726.9 102.5 L 726.9 128.5" stroke-width="8" />
+      <path id="jib-bracing" d="M 738.9 102.5 L 764.9 128.5 L 790.9 102.5 L 816.9 128.5 L 842.9 102.5 L 868.9 128.5 L 894.9 102.5 L 920.9 128.5 L 946.9 102.5 L 972.9 128.5 L 998.9 102.5 L 1024.9 128.5 L 1050.9 102.5 L 1076.9 128.5 L 1102.9 102.5 L 1128.9 128.5 L 1154.9 102.5 L 1180.9 128.5 L 1206.9 102.5 L 1232.9 128.5 L 1258.9 102.5 L 1284.9 128.5 L 1310.9 102.5 L 1336.9 128.5 L 1362.9 102.5" stroke-width="3.5" />
+      <path id="crane-apex" d="M 898.9 102.5 L 916.9 2.5 L 934.9 102.5" stroke-width="7" />
+      <path id="crane-ties" d="M 736.9 102.5 L 916.9 2.5 L 1222.4 102.5" stroke-width="4.5" />
+      <path id="counterweight" d="M 734.9 128.5 L 804.9 128.5 L 804.9 178.5 L 734.9 178.5 Z" fill="#FFFFFF" stroke-width="4" mask="url(#counterweight-mask)" />
+      <path id="cab" d="M 948.9 128.5 L 1000.9 128.5 L 990.9 170.5 L 948.9 170.5 Z" fill="#FFFFFF" stroke-width="4" mask="url(#cab-mask)" />
+      <path id="hook-line" d="M 1283.5 128.5 L 1283.5 238.5" stroke-width="4" />
+    </g>
+    <g id="load" fill="#FFFFFF" stroke="#FFFFFF" stroke-linejoin="round">
+      <path id="sling" d="M 1217.5 302.5 L 1283.5 238.5 L 1349.5 302.5" fill="none" stroke-width="4" stroke-linecap="round" />
+      <circle id="hook-ring" cx="1283.5" cy="238.5" r="7" stroke="none" />
+      <rect id="pallet" x="1213.5" y="302.5" width="140" height="14" rx="3" stroke="none" />
+      <rect id="block" x="1265.5" y="262.5" width="36" height="36" rx="3" stroke="none" />
+    </g>
+    <g id="fence-front">
+    <path id="fence-right" d="M 1540.5 722.5 L 1332.6 842.5 L 1332.6 807.5 L 1540.5 687.5 Z" fill="#AEB6BF" stroke="#AEB6BF" stroke-width="1" stroke-linejoin="round" />
+    <path id="fence-near" d="M 553.2 392.5 L 1332.6 842.5 L 1332.6 807.5 L 553.2 357.5 Z" fill="#C9D0D7" stroke="#C9D0D7" stroke-width="1" stroke-linejoin="round" />
+    </g>
+    <g id="road" filter="url(#shadow)">
+      <path id="road-side" d="M 306.4 535.0 L 1085.8 985.0 L 1085.8 1015.0 L 306.4 565.0 Z" fill="#C9D0D7" />
+      <path id="road-end" d="M 1085.8 985.0 L 1293.6 865.0 L 1293.6 895.0 L 1085.8 1015.0 Z" fill="#AEB6BF" />
+      <g id="road-top" transform="matrix(0.8660 0.5 -0.8660 0.5 800 700)">
+        <rect x="-450.0" y="-120.0" width="900" height="240" fill="#FFFFFF" />
+        <line id="lane-divider" x1="-450.0" y1="0" x2="450.0" y2="0" stroke="#2A343F" stroke-width="20" stroke-dasharray="80 60" stroke-dashoffset="-60" />
+      </g>
+    </g>
+    <g id="no-construction-sign" transform="translate(1000.3 513.1)" filter="url(#shadow)">
+      <circle id="sign-rim" r="184.8" fill="none" stroke="#FFFFFF" stroke-width="12" />
+      <circle id="hole-outline" r="147.2" fill="none" stroke="#FFFFFF" stroke-width="12" />
+      <line id="slash-outline" x1="-166" y1="-166" x2="166" y2="166" stroke="#FFFFFF" stroke-width="49.6" clip-path="url(#sign-clip)" />
+      <circle id="ring" r="166" fill="none" stroke="#D9202A" stroke-width="37.6" />
+      <line id="slash" x1="-166" y1="-166" x2="166" y2="166" stroke="#D9202A" stroke-width="37.6" clip-path="url(#sign-clip)" />
+    </g>
+  </g>
+</svg>
