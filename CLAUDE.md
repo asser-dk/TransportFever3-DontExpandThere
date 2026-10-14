@@ -8,7 +8,7 @@ extend or change the road.
 
 ## Checks
 
-- Type check from the repo root: `~/.luarocks/bin/tl check <file>.tl`. The `tf3` plugin's hook also runs it, and
+- Type check from the repo root: `tf3-tl check <file>.tl`. The `tf3` plugin's hook also runs it, and
   schema validation of `src/mod.json`, `src/_metadata/modinfo.json` and `src/strings.json`, after every edit.
 - `tlconfig.lua` and `all_def.tl` are copies of the workspace (`..`) masters; keep them in sync.
 - No automated tests. Verification is in-game by the user; afterwards grep the game log for `fenris_dont_expand_there`.
