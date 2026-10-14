@@ -1,4 +1,4 @@
-[<img src="art/cover.svg" alt="Don't auto-pin moved windows" width="100%">](https://mod.io/g/transportfever3/m/dont-expand-there)
+[<img src="art/cover.svg" alt="Don't expand there" width="100%">](https://mod.io/g/transportfever3/m/dont-expand-there)
 
 # Don't expand there
 
