@@ -23,4 +23,4 @@ extend or change the road.
 - Each published update: bump `revision` in `src/mod.json` and add a changelog entry to the
   `description` in `src/_metadata/modinfo.json`.
 - The cover embeds `art/map.svg` (OpenStreetMap data, ODbL). Keep the line
-  `Cover map © OpenStreetMap contributors, openstreetmap.org/copyright` at the end of that `description`.
+  `Cover map © OpenStreetMap, openstreetmap.org/copyright` at the end of that `description`.
