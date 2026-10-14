@@ -9,7 +9,8 @@
     "name": "Don't expand there",
     "summary": "Keep town buildings away from specific roads.",
     "tags": [
-        "Road"
+        "Road",
+        "Script Mod"
     ],
     "url": ""
 }
