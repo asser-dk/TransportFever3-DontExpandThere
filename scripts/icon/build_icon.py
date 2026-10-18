@@ -27,7 +27,7 @@ HATCH_PERIOD = 24.0
 HATCH_WIDTH = 10.0
 HATCH_ALPHA = 0.6
 HATCH_GAP = 8.0
-HATCH_COLOUR = np.array([240, 200, 40], float)
+HATCH_COLOUR = np.array([220, 40, 40], float)
 
 
 def load(path):
