@@ -1,4 +1,13 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(tf3-tl *)",
+      "Bash(lua5.2 *)",
+      "Bash(magick *)",
+      "Bash(rsvg-convert *)",
+      "WebFetch(domain:wiki.transportfever3.com)"
+    ]
+  },
   "enabledPlugins": {
     "tf3@transport-fever-3-modding": true
   }

@@ -1,3 +1,4 @@
 .idea/
 src/_metadata/0.png
 __pycache__/
+.claude/settings.local.json
