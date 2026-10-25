@@ -6,7 +6,8 @@
             "Bash(magick *)",
             "Bash(rsvg-convert *)",
             "WebFetch(domain:wiki.transportfever3.com)",
-            "Bash(tf3-test *)"
+            "Bash(tf3-test *)",
+            "Bash(modio-get *)"
         ]
     },
     "enabledPlugins": {
