@@ -23,7 +23,7 @@ extend or change the road.
 ## Releases
 
 - Commit straight to `main`; no feature branches.
-- Each published update: bump `revision` in `src/mod.json` and add a changelog entry to the
-  `description` in `src/_metadata/modinfo.json`.
+- Each published update: bump `revision` in `src/mod.json`. The changelog goes in the Mod Hub's
+  changelog field at upload (`/tf3:stage-mod` checklist), not in `src/_metadata/modinfo.json`.
 - The cover embeds `art/map.svg` (OpenStreetMap data, ODbL). Keep the line
   `Cover map © OpenStreetMap, openstreetmap.org/copyright` at the end of that `description`.
