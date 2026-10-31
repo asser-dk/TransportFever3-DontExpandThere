@@ -49,6 +49,25 @@ describe("era_icons", function()
 		assert.same({ yearFrom = { { 0, DIR .. "icon_old.tga" }, { 1940, ICON } } }, d.icon)
 	end)
 
+	it("does not mutate the game's definition table", function()
+		local original = definition()
+		local d = run(original)
+		assert.same(definition(), original)
+		assert.not_equal(original, d)
+	end)
+
+	it("wraps forEachDefinition once when doReplace runs again", function()
+		local module = tf3.require("gui/fenris_dont_expand_there/era_icons.script")
+		local first = util.forEachDefinition
+		module.doReplace({})
+		assert.equal(first, util.forEachDefinition)
+		input = definition()
+		local seen = {}
+		util.forEachDefinition(function(def) seen[#seen + 1] = def end, {})
+		assert.equal(1, #seen)
+		assert.same({ yearFrom = { { 0, DIR .. "icon_old.tga" }, { 1940, ICON } } }, seen[1].icon)
+	end)
+
 	it("keeps the modern preview from 1940 on", function()
 		year = 1940
 		assert.same({ icon = PREVIEW }, run(definition()).previewIcon)
